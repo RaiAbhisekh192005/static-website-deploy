@@ -9,6 +9,8 @@ systemctl enable httpd
 systemctl start httpd
 mkdir temp
 cd temp
+```
+```
 wget "object URL of S3"
 ls
 unzip "filename.zip (filename of your zip file)"
