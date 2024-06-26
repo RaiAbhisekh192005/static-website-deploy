@@ -1,0 +1,4 @@
+Project Title: Deploying a Static Website on AWS EC2 Instance
+
+Project Description:
+This project involves deploying a static website on an AWS EC2 instance. The necessary resources, including the website files and deployment scripts, are provided in the project directory.
