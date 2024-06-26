@@ -9,3 +9,42 @@ Resources:
 website-files: Contains the HTML, CSS, and JavaScript files for the static website.
 deployment-scripts: Contains scripts to automate the deployment and server setup processes.
 README.txt: This documentation file.
+Steps to Deploy the Static Website:
+
+Launch an EC2 Instance:
+
+Log in to your AWS Management Console.
+Navigate to the EC2 Dashboard.
+Click on "Launch Instance."
+Choose an Amazon Machine Image (AMI) (e.g., Amazon Linux 2 AMI).
+Select an instance type (e.g., t2.micro for free tier eligibility).
+Configure instance details (default settings are usually sufficient).
+Add storage (default settings are usually sufficient).
+Add tags (optional).
+Configure security group to allow HTTP (port 80) and SSH (port 22) access.
+Review and launch the instance.
+Download the private key (.pem file) when prompted and save it securely.
+Connect to the EC2 Instance:
+
+Open a terminal (Linux/Mac) or Command Prompt (Windows).
+Navigate to the directory where the .pem file is saved.
+Connect to the EC2 instance using SSH.
+Install Required Packages:
+
+Update the package lists.
+Install Nginx web server.
+Transfer Website Files to the EC2 Instance:
+
+On your local machine, use SCP to transfer the website files to the EC2 instance.
+Deploy the Website:
+
+Connect to the EC2 instance via SSH (if not already connected).
+Navigate to the project directory.
+Run the deployment script.
+Access the Website:
+
+Open a web browser and navigate to the public DNS of your EC2 instance.
+Troubleshooting:
+
+Ensure that the security group associated with your EC2 instance allows inbound traffic on port 80 (HTTP) and port 22 (SSH).
+Check the Nginx error logs for any issues.
